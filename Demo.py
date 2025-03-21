@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify, render_template
 api_key = "RANDOM_API_KEY"
 url = "https://api.openweathermap.org/data/2.5/"
 
-def weather_data(city):
+def fetch_weather(city):
     try:
         current_weather_url = f"{url}weather?q={city}&appid={api_key}&units=metric"
         forecast_url = f"{url}forecast?q={city}&appid={api_key}&units=metric"
