@@ -1,5 +1,5 @@
 import requests
-from Demo import weather_data
+from Demo import fetch_weather
 
 app = Flask(__name__)
 
